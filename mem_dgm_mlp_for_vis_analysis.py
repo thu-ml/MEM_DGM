@@ -993,7 +993,7 @@ elif analysis_mode == 'visualization_mem':
     print indices
     print '##'
     useful_image = x_mean[indices.flatten().astype(np.int32),:]
-    useful_tile_shape = (7, 10)
+    useful_tile_shape = (k, 10)
     image = paramgraphics.mat_to_img(useful_image.T, dim_input, colorImg=colorImg, tile_shape=useful_tile_shape, scale=True)
     image.save(os.path.join(res_out, 'useful_visualization.png'), 'PNG')
     image = paramgraphics.mat_to_img(useful_image.T, dim_input, colorImg=colorImg, tile_shape=useful_tile_shape, scale=False)
