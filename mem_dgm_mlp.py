@@ -1,5 +1,3 @@
-# This code implementents a variational autoencoder using importance weighted
-# sampling as described in Burda et al. 2015 "Importance Weighted Autoencoders"
 import theano
 theano.config.floatX = 'float32'
 import matplotlib
